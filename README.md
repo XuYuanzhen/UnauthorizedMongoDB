@@ -3,10 +3,10 @@ You should use ZMAP to scan the IPs which open mongoDB port(27017) and save the 
 
 check login for unauthorized mongoDB
 
-#Step1 scan the IPs open port 27017
+#Step1 scan the IPs open port 27017 with zmap
 
 zmap xxx.xx.xxx.0/24 -p 27017 -o ip.txt
 
 #Step2 check the unauthorized Mongodb servers
 
-python mongodb_check.py ip.txt
+python mongo_check.py ip.txt
